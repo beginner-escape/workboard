@@ -1,21 +1,11 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import DeliveryPage from "./pages/delivery/DeliveryPage";
-import LoginPage from "./pages/login/LoginPage";
-import MaterialsPage from "./pages/materials/MaterialsPage";
-import OrderPage from "./pages/order/OrderPage";
-import ReportPage from "./pages/report/ReportPage";
+import { Routes, Route } from "react-router-dom";
+import Dashboard from "./pages/Dashboard/Dashboard";
 
 function Router() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<LoginPage />} />
-        <Route path="/order" element={<OrderPage />} />
-        <Route path="/delivery" element={<DeliveryPage />} />
-        <Route path="/materials" element={<MaterialsPage />} />
-        <Route path="/report" element={<ReportPage />} />
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+      <Route axact path="/" element={<Dashboard />} />
+    </Routes>
   );
 }
 

@@ -22,8 +22,9 @@ const Bar = styled.div`
 
 const NavBTN = styled.div`
   width: 100px;
-  height: 20px;
-  background-color: gray;
+  height: 100%;
+  color: white;
+  background-color: none;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -1,6 +1,6 @@
 import Router from "./Router";
 import { createGlobalStyle } from "styled-components";
-import NavBar from "./components/global/Navbar";
+import NavBar from "./global/Navbar";
 
 function App() {
   return (
@@ -21,4 +21,11 @@ body {
     padding: 0;
     margin: 0;
 }
+*{
+    box-sizing: border-box;
+  }
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
 `;
